@@ -255,5 +255,5 @@ input[type=text]:placeholder {
 }
 
 .you-ring-gye-sung {
-  display: block;
+  display: block !important;
 }
