@@ -1,2 +1,2 @@
-# namuboard-replacer
-Link replacer for NamuWiki Board
+# check DMCA
+checks for "Licensed to YouTube by"
