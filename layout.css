@@ -251,10 +251,10 @@ input[type=text]:placeholder {
   width:60%;
 }
 
-#mungtang-i {
+#mungtang-i, #songlist {
   display: none;
 }
 
-.you-ring-gye-sung {
+.you-ring-gye-sung, .display {
   display: block !important;
 }
