@@ -7,7 +7,7 @@
         <link href="./layout.css" rel="stylesheet">
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-        <title>Namuwiki Board Url Replacer</title>
+        <title>DMCA 확인 사이트</title>
         <script>
             function copyToClipboard(element) {
                 element.select();
@@ -17,22 +17,10 @@
                 try {
                     var raw_url = document.getElementById("before").value;
                     var url = new URL(raw_url);
-                    var mid = url.searchParams.get("mid");
-                    var document_srl = url.searchParams.get("document_srl");
-                    var shorturl = url.pathname.match(/^\/([A-Za-z-_]+)\/([0-9]+)/);
-                    var newurl = url.pathname.match(/^\/b\/([A-Za-z-_]+)\/([0-9]+)/);
-                    if(shorturl != null) {
-                        mid = shorturl[1];
-                        document_srl = shorturl[2];
-                    }
-                    if(newurl != null) {
-                        mid = newurl[1];
-                        document_srl = newurl[2];
-                    }
-                    if(url.host != "board.namu.wiki" || document_srl == null || mid == null) {
+                    if(url.host != "youtube.com" || url.host != "youtu.be" || ) {
                         alert('변환할 수 없는 형태의 주소입니다!');
                     } else {
-                        document.getElementById("after").value = "https://board.namu.wiki/b/" + mid + "/" + document_srl;
+                        console.log('여기에 변환코드 작성');
                     }
                 } catch(e) {
                     alert('잘못된 주소입니다!');
@@ -49,9 +37,8 @@
                 <!-- Tabs Titles -->
                 <!-- Login Form -->
                 <form>
-                    <input type="text" class="fadeIn second" id="before" placeholder="여기에 변환할 주소 입력">
-                    <input type="text" class="fadeIn third" id="after" readonly placeholder="변환된 주소가 이곳에 입력됩니다" onclick="copyToClipboard(this)">
-                    <input type="button" class="fadeIn fourth" value="변환하기" onclick="return replaceUrl()">
+                    <input type="text" class="fadeIn second" id="before" placeholder="확인할 주소 입력">
+                    <input type="button" class="fadeIn fourth" value="확인하기" onclick="return replaceUrl()">
                 </form>
                 <!-- Remind Passowrd -->
                 <div id="formFooter">
