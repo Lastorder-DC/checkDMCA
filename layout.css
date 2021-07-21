@@ -249,3 +249,11 @@ input[type=text]:placeholder {
 #icon {
   width:60%;
 }
+
+#mungtang-i {
+  display: none;
+}
+
+.you-ring-gye-sung {
+  display: block;
+}
