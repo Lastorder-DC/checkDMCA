@@ -258,3 +258,13 @@ input[type=text]:placeholder {
 .you-ring-gye-sung, .display {
   display: block !important;
 }
+
+.dmca, .woo-gle-woo-gle {
+  color:red;
+  font-weight: bold;
+}
+
+.no-dmca {
+  color:black;
+  font-weight: normal;
+}
