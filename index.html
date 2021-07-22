@@ -20,6 +20,14 @@
                         vid_id = url.pathname.replace("/","")
                     } else {
                         alert('변환할 수 없는 형태의 주소입니다!');
+                        
+                        return;
+                    }
+                    
+                    if(vid_id == "" || vid_id == null) {
+                        alert('변환할 수 없는 형태의 주소입니다!');
+                        
+                        return;
                     }
                     
                     fetch('https://mungtang-i.ddns.net:1983/check/' + vid_id)
