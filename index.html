@@ -18,10 +18,6 @@
                         vid_id = url.searchParams.get("v");
                     } else if(url.host == "youtu.be") {
                         vid_id = url.pathname.replace("/","")
-                    } else {
-                        alert('이런 링크는 확인를! 할수가 없어요');
-                        
-                        return;
                     }
                     
                     if(vid_id == "" || vid_id == null) {
